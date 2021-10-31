@@ -12,8 +12,8 @@ const book = require("../controller/book.js")
 
 router.post('/create/:userId', verifyTokenAndAuthrization, book.createBook)        // TEST DONE
 router.get('/search', verifyToken, book.displayBookByName)                         // TEST DONE
-router.put('/edit/:userId',verifyTokenAndAuthrization, book.editBook)
-router.delete('/delete/:userId',verifyTokenAndAuthrization, book.deleteBook)
+router.put('/edit/:userId',verifyTokenAndAuthrization, book.editBook)              // TEST DONE
+router.delete('/delete/:userId',verifyTokenAndAuthrization, book.deleteBook)       // TEST DONE
 router.get('/', book.getAllBooks)                                                  // TEST DONE
 
 module.exports = router; 

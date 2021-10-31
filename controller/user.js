@@ -105,6 +105,7 @@ exports.updateUser = (req, res) => {
     )
     .then(() => res.status(201).send("edited successfully"))
     .catch((err) => res.status(500).send(err));
+    // or we can use
     // .findOneAndUpdate( 
     //   { _id: req.params.id },
     //   {
